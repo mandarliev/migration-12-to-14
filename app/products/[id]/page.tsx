@@ -1,5 +1,4 @@
-"use client";
-
+import { notFound } from "next/navigation";
 import React from "react";
 
 type Props = {
@@ -9,10 +8,10 @@ type Props = {
 }
 
 function ProductsPage({params: {id}}: Props) {
-  console.log(id);
+  if (!id) notFound();
   return (
     <div>
-      <h1>I am the last parameter {id}</h1>
+      <h1 className="m-5">I am the last parameter of the search: {id}</h1>
     </div>
   );
 }
