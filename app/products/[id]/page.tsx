@@ -54,7 +54,7 @@ function ProductsPage({ params: { id } }: Props) {
       <div className="m-5 space-y-5">
         <h1>{product.title}</h1>
         <h2>{product.description}</h2>
-        <p>{product.price}</p>
+        <p>{product.price}</p> 
       </div>
     </div>
   );
